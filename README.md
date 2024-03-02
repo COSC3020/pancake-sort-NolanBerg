@@ -24,7 +24,7 @@ I've provided some basic testing code that uses
 Hint: Start by thinking about the calls to `flip()` required to move a *single*
 element into its correct position.
 
-RESOURCES: Coded in python and used ai to convert to js
+RESOURCES: Coded in python and used ai to convert to js below is my code
 
 import random
 
