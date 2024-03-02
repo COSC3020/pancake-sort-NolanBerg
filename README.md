@@ -80,5 +80,5 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
-the overall asymptotic runtime of the pancake sort algorithm, in terms of both comparisons and flips, is Θ(n 2)
+The asymptotic runtime of the pancake sort algorithm, in terms of both comparisons and flips, is Θ(n 2)
 
