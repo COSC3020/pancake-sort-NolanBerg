@@ -1,4 +1,4 @@
-const jsc = requir('jsverify');
+const jsc = require('jsverify');
 const { pancakeSort, flip} = require('./code.js');
 
 const testSort = jsc.forall('array nat', function (arr) {
