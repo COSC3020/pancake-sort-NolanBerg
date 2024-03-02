@@ -24,6 +24,56 @@ I've provided some basic testing code that uses
 Hint: Start by thinking about the calls to `flip()` required to move a *single*
 element into its correct position.
 
+RESOURCES: Coded in python and used ai to convert to js
+
+import random
+
+def flip(arr, i):
+
+start = 0
+
+while start < i:
+
+(arr[i], arr[start]) = (arr[start], arr[i])
+
+start += 1
+
+i -= 1
+
+def pancakeSort(arr, n):
+
+curr_size = n
+
+while curr_size > 1:
+
+large = 0
+
+for i in range(1, curr_size):
+
+if arr[i] > arr[large]:
+
+large = i
+
+if large != curr_size - 1:
+
+flip(arr, large)
+
+flip(arr, curr_size - 1)
+
+curr_size -= 1
+
+return arr
+
+array = [random.randint(-10, 10) for _ in range(5)]
+
+print(array)
+
+new_array = pancakeSort(array, len(array))
+
+print(new_array)
+
+
+
 ## Runtime Analysis
 
 What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
