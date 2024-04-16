@@ -89,5 +89,8 @@ So the asymptotic runtime is $\Theta(n^2)$.
 
 Asymptotic runtime for flips:
 
+Flip function is called two times in each iteration of main loop, if it is necessary. Each call to flip function performs series of swaps to position elements correctly. In the worst-case scenario, no flips will occur. In the best-case scenario,  the largest element is always at the last index.
+
+So the asymptotic runtime is $\Theta(n)$
 
 
