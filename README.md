@@ -81,6 +81,13 @@ number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
 
+Asymptotic runtime for comparisons:
+
+The main loop in pancakeSort function iterates curr_size times, where it starts at length of array and decrements by one in each iteration until reaching 1. Then the nested loop compares each element to find index of largest element. Each element will be compared to every other element once in each iteration of the main loop in worst case scenario.
+
+So the asymptotic runtime is $\Theta(n^2)$.
+
+Asymptotic runtime for flips:
 
 
 
